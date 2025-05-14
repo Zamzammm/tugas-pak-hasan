@@ -27,7 +27,6 @@ const dataArtikel = {
         <li>Sistem pendingin</li>
       </ul>
     `,
-    subArtikel: "Sub artikel ini menjelaskan lebih detail tentang fungsi RAM dan CPU dalam sebuah sistem.",
     gambar: "download (2).jpeg",
     file: "uploads/Komponen Sistem Komputer Presentasi Biru dan Ungu Ilustrasi (1).pdf",
   },

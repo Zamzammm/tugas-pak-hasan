@@ -95,6 +95,29 @@ const dataArtikel = {
          <li>Ulangi langkah 5-8 untuk interface fastethernet 0/2</li>
          <li>Simpan konfigurasi: copy running-config startup-config</li>
         </lu>
+      <h3>Contoh Konfigurasi Routing Dinamis :</h3>
+         <h6>Misalkan Anda ingin mengkonfigurasi routing dinamis menggunakan OSPF:</h6>
+         <lu>
+          <li>Masuk ke mode konfigurasi global: config t</li>
+          <li>Aktifkan OSPF: router ospf 1</li>
+          <li>Tentukan area: network [alamat_IP] [wildcard_mask] area [area_ID]</li>
+          <li>Simpan konfigurasi: copy running-config startup-config</li>
+         </lu>
+      <h3>Contoh Konfigurasi Routing Statis :</h3>
+         <h6>Misalkan Anda ingin mengkonfigurasi routing statis:</h6>
+         <lu>
+          <li>Masuk ke mode konfigurasi global: config t</li>
+          <li>Tentukan rute statis: ip route [alamat_tujuan] [subnet_mask] [alamat_gateway]</li>
+          <li>Simpan konfigurasi: copy running-config startup-config</li>
+         </lu>
+      <h3>Contoh Konfigurasi BGP :</h3>
+         <h6>Misalkan Anda ingin mengkonfigurasi BGP:</h6>
+         <lu>
+          <li>Masuk ke mode konfigurasi global: config t</li>
+          <li>Aktifkan BGP: router bgp [AS_number]</li>
+          <li>Tentukan tetangga BGP: neighbor [alamat_IP] remote-as [AS_number]</li>
+          <li>Simpan konfigurasi: copy running-config startup-config</li>
+         </lu>
     `,
     gambar: "WhatsApp Image 2025-01-30 at 09.35.20_e9a66288.jpg",
     file: "uploads/Blue and Black Modern Group Project Presentation.pdf",

@@ -21,4 +21,9 @@ const daftarTopik = [
     link: "artikel.html?id=4"
   },
   // Tambahkan lebih banyak topik di sini
+  {
+    judul: "Sistem Operasi",
+    deskripsi: "bagaimana sih cara kerja sistem operasi dan apa saja fungsinya?",
+    link: "artikel.html?id=5"
+  },
 ];

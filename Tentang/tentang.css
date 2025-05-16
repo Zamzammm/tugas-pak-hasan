@@ -1,0 +1,141 @@
+/* Reset & font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0f0f1a;
+  color: #ddd;
+  line-height: 1.6;
+}
+
+/* Container Umum */
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem 1rem;
+}
+
+/* Navbar */
+.navbar {
+  background: #121224;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 1rem;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #5cf;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #aaa;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #5cf;
+}
+
+/* Grid Anggota */
+.anggota-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 3rem 1rem;
+}
+
+.anggota-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(92, 200, 255, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.anggota-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(92, 200, 255, 0.3);
+}
+
+.anggota-card img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 0.8rem;
+  border: 2px solid #5cf3;
+}
+
+.anggota-card h3 {
+  color: #5cf;
+  font-size: 1.2rem;
+}
+
+/* Informasi Tambahan */
+.keterangan {
+  text-align: center;
+  max-width: 800px;
+  margin: 3rem auto 4rem;
+  padding: 2rem;
+  background: #1c1c3a;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #222244;
+  color: #ccc;
+  font-size: 1.1rem;
+}
+
+.keterangan h2 {
+  margin-bottom: 1rem;
+  color: #7af;
+}
+
+.footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #121224;
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: 4rem;
+}
+
+/* Tambahkan di tentang.css */
+
+.anggota-card.fade {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.anggota-card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+

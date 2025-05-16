@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Materi Jaringan Komputer dan Internet - RingkasanKu</title>
+  <style>
+    /* Reset dan style dasar */
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #121212;
+      color: #e0e0e0;
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+    a {
+      color: #4a90e2;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    nav {
+      background-color: #1f1f1f;
+      padding: 1rem;
+      text-align: center;
+      font-weight: 600;
+      font-size: 1.1rem;
+      border-bottom: 1px solid #333;
+    }
+    nav a {
+      color: #4a90e2;
+    }
+    .container {
+      max-width: 900px;
+      margin: 2rem auto 3rem auto;
+      padding: 1rem 1.5rem;
+      background-color: #1e1e1e;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgb(74 144 226 / 0.3);
+    }
+    h1 {
+      color: #4a90e2;
+      margin-bottom: 1rem;
+      text-align: center;
+      font-weight: 700;
+      font-size: 2.5rem;
+    }
+    h2 {
+      color: #74b9ff;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+      border-bottom: 2px solid #4a90e2;
+      padding-bottom: 0.3rem;
+    }
+    h3 {
+      color: #82ccdd;
+      margin-top: 1.5rem;
+      margin-bottom: 0.7rem;
+      font-weight: 600;
+    }
+    p {
+      margin-bottom: 1.2rem;
+      font-size: 1.1rem;
+    }
+    ul, ol {
+      margin-left: 1.4rem;
+      margin-bottom: 1.2rem;
+    }
+    ul li, ol li {
+      margin-bottom: 0.6rem;
+      font-size: 1.05rem;
+    }
+    .btn {
+      display: inline-block;
+      background-color: #4a90e2;
+      color: #fff;
+      padding: 0.7rem 1.4rem;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+      border: none;
+      transition: background-color 0.3s ease;
+      margin-top: 1rem;
+      user-select: none;
+    }
+    .btn:hover {
+      background-color: #2c6cb0;
+    }
+    #pelajari-lebih-lanjut {
+      display: none;
+      margin-top: 1.5rem;
+      padding: 1.4rem 1.5rem;
+      background-color: #2c3e50;
+      border-radius: 10px;
+      border: 1px solid #4a90e2;
+      color: #c5d6f2;
+      font-size: 1.05rem;
+      line-height: 1.8;
+    }
+    .daftar-isi {
+      background: #182c4f;
+      padding: 1rem 1.2rem;
+      margin-bottom: 2rem;
+      border-radius: 8px;
+      font-size: 1rem;
+      line-height: 1.5;
+      color: #a3b4cc;
+      user-select: none;
+    }
+    .daftar-isi strong {
+      color: #74b9ff;
+    }
+    .daftar-isi a {
+      color: #82ccdd;
+    }
+    .daftar-isi a:hover {
+      text-decoration: underline;
+    }
+    blockquote {
+      margin: 1.5rem 0;
+      padding-left: 1rem;
+      border-left: 4px solid #4a90e2;
+      color: #a0b8d6;
+      font-style: italic;
+    }
+    @media (max-width: 600px) {
+      .container {
+        margin: 1rem;
+        padding: 1rem;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="../topik.html">&#8592; Kembali ke Daftar Topik</a>
+</nav>
+
+<div class="container">
+  <h1>Jaringan Komputer dan Internet</h1>
+
+  <div class="daftar-isi">
+    <strong>Daftar Isi:</strong>
+    <ol>
+      <li><a href="#definisi">Definisi Jaringan Komputer dan Internet</a></li>
+      <li><a href="#jaringan-dasar">Jaringan Dasar Komputer</a></li>
+      <li><a href="#perangkat-jaringan">Perangkat Jaringan</a></li>
+      <li><a href="#topologi">Topologi Jaringan</a></li>
+      <li><a href="#konfigurasi">Tutorial Konfigurasi</a></li>
+      <li><a href="#pelajari-lebih-lanjut">Pelajari Lebih Lanjut</a></li>
+    </ol>
+  </div>
+
+  <section id="definisi">
+    <h2>Definisi Jaringan Komputer dan Internet</h2>
+    <p>
+      Jaringan komputer adalah sistem yang menghubungkan dua atau lebih perangkat komputer agar dapat saling bertukar informasi dan sumber daya. Internet, di sisi lain, adalah jaringan global yang menghubungkan berbagai jaringan komputer di seluruh dunia, memungkinkan akses ke informasi dan komunikasi jarak jauh.
+    </p>
+  </section>
+
+  <section id="jaringan-dasar">
+    <h2>Jaringan Dasar Komputer</h2>
+    <ul>
+      <li><strong>LAN (Local Area Network):</strong> Jaringan lokal yang menghubungkan komputer dalam area terbatas seperti rumah, kantor, atau sekolah.</li>
+      <li><strong>MAN (Metropolitan Area Network):</strong> Jaringan yang mencakup area lebih luas, biasanya antar gedung atau area kota.</li>
+      <li><strong>WAN (Wide Area Network):</strong> Jaringan yang menghubungkan area geografis luas, termasuk internet sebagai contoh terbesar WAN.</li>
+      <li><strong>Jaringan Nirkabel (Wireless Network):</strong> Jaringan yang menggunakan gelombang radio untuk menghubungkan perangkat tanpa kabel.</li>
+    </ul>
+  </section>
+
+  <section id="perangkat-jaringan">
+    <h2>Perangkat Jaringan</h2>
+    <ul>
+      <li><strong>Switch:</strong> Menghubungkan perangkat dalam jaringan lokal dan mengelola pengiriman data antar perangkat.</li>
+      <li><strong>Router:</strong> Menghubungkan beberapa jaringan dan mengatur lalu lintas data antar jaringan tersebut.</li>
+      <li><strong>Modem:</strong> Mengubah sinyal digital menjadi sinyal analog dan sebaliknya, digunakan untuk koneksi internet.</li>
+      <li><strong>Access Point:</strong> Menyediakan akses jaringan nirkabel kepada perangkat.</li>
+      <li><strong>Kabel Jaringan:</strong> Media fisik untuk menghubungkan perangkat jaringan.</li>
+    </ul>
+  </section>
+
+  <section id="topologi">
+    <h2>Topologi Jaringan</h2>
+    <ul>
+      <li><strong>Mesh:</strong> Metode menghubungkan node secara langsung tanpa perantara.</li>
+      <li><strong>Star:</strong> Semua node terhubung ke satu perangkat pusat seperti hub atau switch.</li>
+      <li><strong>Bus:</strong> Semua perangkat terhubung ke satu kabel utama.</li>
+      <li><strong>Ring:</strong> Node terhubung membentuk cincin.</li>
+      <li><strong>Tree:</strong> Kombinasi hirarkis dari beberapa topologi lain.</li>
+      <li><strong>Hybrid:</strong> Kombinasi beberapa topologi jaringan.</li>
+      <li><strong>Peer to Peer:</strong> Sistem di mana perangkat berkomunikasi langsung tanpa server pusat.</li>
+    </ul>
+  </section>
+
+  <section id="konfigurasi">
+    <h2>Tutorial Konfigurasi Switch Menggunakan Cisco Packet Tracer</h2>
+    <p>Berikut langkah-langkah umum dalam mengkonfigurasi switch di Cisco Packet Tracer:</p>
+    <ol>
+      <li>Buka Cisco Packet Tracer dan letakkan perangkat switch di ruang kerja.</li>
+      <li>Akses CLI pada switch melalui tab "CLI".</li>
+      <li>Masuk ke mode privileged exec dengan perintah <code>enable</code>.</li>
+      <li>Masuk ke mode konfigurasi global dengan <code>configure terminal</code> atau <code>config t</code>.</li>
+      <li>Gunakan <code>show ip interface brief</code> untuk melihat informasi interface.</li>
+      <li>Gunakan <code>show vlan</code> untuk melihat VLAN yang ada.</li>
+      <li>Masuk ke konfigurasi VLAN dengan <code>vlan database</code>.</li>
+      <li>Buat VLAN dengan <code>vlan [ID]</code> dan beri nama dengan <code>name [nama_vlan]</code>.</li>
+      <li>Keluar dari mode konfigurasi VLAN dengan <code>exit</code>.</li>
+      <li>Konfigurasi interface dengan <code>interface [nama_interface]</code>.</li>
+      <li>Set mode interface menjadi access dengan <code>switchport mode access</code>.</li>
+      <li>Set VLAN untuk interface dengan <code>switchport access vlan [ID_vlan]</code>.</li>
+      <li>Aktifkan interface dengan <code>no shutdown</code>.</li>
+      <li>Simpan konfigurasi dengan <code>copy running-config startup-config</code>.</li>
+    </ol>
+    <p>Contoh konfigurasi VLAN:</p>
+    <pre>
+config t
+vlan 10
+name VLAN10
+exit
+interface fastethernet 0/1
+switchport mode access
+switchport access vlan 10
+no shutdown
+interface fastethernet 0/2
+switchport mode access
+switchport access vlan 10
+no shutdown
+copy running-config startup-config
+    </pre>
+
+    <h3>Contoh Konfigurasi Routing Dinamis dengan OSPF</h3>
+    <pre>
+config t
+router ospf 1
+network [alamat_IP] [wildcard_mask] area [area_ID]
+copy running-config startup-config
+    </pre>
+
+    <h3>Contoh Konfigurasi Routing Statis</h3>
+    <pre>
+config t
+ip route [alamat_tujuan] [subnet_mask] [alamat_gateway]
+copy running-config startup-config
+    </pre>
+
+    <h3>Contoh Konfigurasi BGP</h3>
+    <pre>
+config t
+router bgp [AS_number]
+neighbor [alamat_IP] remote-as [AS_number]
+copy running-config startup-config
+    </pre>
+  </section>
+
+  <button id="toggle-btn" class="btn" aria-expanded="false" aria-controls="pelajari-lebih-lanjut">
+    Pelajari Lebih Lanjut
+  </button>
+
+  <section id="pelajari-lebih-lanjut" tabindex="-1" aria-hidden="true">
+    <h2>Penjelasan Teknis Mendalam Jaringan Komputer dan Internet</h2>
+    <p>
+      Jaringan komputer merupakan fondasi utama dalam dunia teknologi informasi modern. Dengan berbagai jenis dan topologi, jaringan memungkinkan komputer dan perangkat lain untuk saling berkomunikasi, berbagi data, serta sumber daya secara efisien dan aman. Internet sebagai jaringan global memungkinkan akses ke berbagai informasi dan layanan di seluruh dunia.
+    </p>
+
+    <h3>Arsitektur Jaringan</h3>
+    <p>
+      Jaringan komputer dibangun dengan arsitektur yang mengatur bagaimana perangkat saling berhubungan dan berkomunikasi. Arsitektur ini dapat berupa client-server atau peer-to-peer. Pada arsitektur client-server, server menyediakan layanan kepada client, sedangkan dalam peer-to-peer, semua perangkat berperan setara.
+    </p>
+
+    <h3>Model Referensi OSI dan TCP/IP</h3>
+    <p>
+      Untuk memahami komunikasi jaringan secara mendalam, model referensi OSI (Open Systems Interconnection) dan TCP/IP adalah kunci. Model OSI memiliki 7 lapisan, mulai dari fisik hingga aplikasi, yang mengatur bagaimana data dikemas, dikirim, dan diterima.
+    </p>
+    <ul>
+      <li><strong>Lapisan Fisik:</strong> Mengatur transmisi bit melalui media fisik.</li>
+      <li><strong>Lapisan Data Link:</strong> Mengatur pengiriman frame antara node dalam jaringan lokal.</li>
+      <li><strong>Lapisan Jaringan:</strong> Mengatur pengalamatan dan routing paket antar jaringan.</li>
+      <li><strong>Lapisan Transport:</strong> Menjamin pengiriman data yang andal antar host.</li>
+      <li><strong>Lapisan Sesi:</strong> Mengatur sesi komunikasi antar aplikasi.</li>
+      <li><strong>Lapisan Presentasi:</strong> Mengatur format dan enkripsi data.</li>
+      <li><strong>Lapisan Aplikasi:</strong> Menyediakan layanan jaringan untuk aplikasi pengguna.</li>
+    </ul>
+
+    <h3>Jenis-Jenis Jaringan dan Media Transmisi</h3>
+    <p>
+      Jaringan bisa menggunakan media fisik seperti kabel tembaga, serat optik, atau media nirkabel seperti Wi-Fi, Bluetooth. Masing-masing media memiliki kelebihan dan kekurangan dalam kecepatan, jarak, dan keamanan.
+    </p>
+
+    <h3>Switch dan Router</h3>
+    <p>
+      Switch bekerja pada lapisan data link untuk menghubungkan perangkat dalam satu jaringan lokal, sedangkan router bekerja pada lapisan jaringan untuk menghubungkan beberapa jaringan dan mengarahkan paket data ke tujuan yang benar.
+    </p>
+
+    <h3>Keamanan Jaringan</h3>
+    <p>
+      Keamanan jaringan meliputi firewall, VPN, enkripsi data, dan metode autentikasi yang mencegah akses tidak sah dan menjaga integritas data. Sistem deteksi intrusi (IDS) dan sistem pencegahan intrusi (IPS) juga penting untuk melindungi jaringan.
+    </p>
+
+    <h3>IP Address dan Subnetting</h3>
+    <p>
+      IP Address adalah alamat unik untuk setiap perangkat dalam jaringan. Subnetting digunakan untuk membagi jaringan besar menjadi subnet yang lebih kecil untuk efisiensi dan keamanan.
+    </p>
+
+    <h3>DNS dan DHCP</h3>
+    <p>
+      DNS (Domain Name System) menerjemahkan nama domain menjadi alamat IP. DHCP (Dynamic Host Configuration Protocol) secara otomatis memberikan alamat IP kepada perangkat dalam jaringan.
+    </p>
+
+    <h3>Teknologi Jaringan Modern</h3>
+    <ul>
+      <li><strong>IPv6:</strong> Versi terbaru protokol internet dengan alamat lebih panjang untuk mengatasi keterbatasan IPv4.</li>
+      <li><strong>Cloud Networking:</strong> Jaringan yang dikelola dan disediakan melalui layanan cloud.</li>
+      <li><strong>Software-Defined Networking (SDN):</strong> Mengelola jaringan secara terpusat melalui software untuk fleksibilitas dan otomatisasi.</li>
+      <li><strong>Internet of Things (IoT):</strong> Konektivitas perangkat pintar yang luas dan heterogen.</li>
+    </ul>
+
+    <h3>Kesimpulan</h3>
+    <p>
+      Memahami jaringan komputer dan internet adalah kunci dalam era digital saat ini. Dengan pemahaman yang mendalam, kamu bisa mengelola, mengamankan, dan mengoptimalkan jaringan sesuai kebutuhan, baik untuk skala kecil seperti LAN rumahan maupun jaringan besar seperti internet global.
+    </p>
+  </section>
+</div>
+
+<script>
+  const toggleBtn = document.getElementById('toggle-btn');
+  const pelajariSection = document.getElementById('pelajari-lebih-lanjut');
+
+  toggleBtn.addEventListener('click', () => {
+    const isHidden = pelajariSection.style.display === 'none' || pelajariSection.style.display === '';
+    if (isHidden) {
+      pelajariSection.style.display = 'block';
+      toggleBtn.setAttribute('aria-expanded', 'true');
+      pelajariSection.setAttribute('aria-hidden', 'false');
+      pelajariSection.focus();
+      toggleBtn.textContent = 'Tutup Pelajari Lebih Lanjut';
+    } else {
+      pelajariSection.style.display = 'none';
+      toggleBtn.setAttribute('aria-expanded', 'false');
+      pelajariSection.setAttribute('aria-hidden', 'true');
+      toggleBtn.textContent = 'Pelajari Lebih Lanjut';
+    }
+  });
+</script>
+
+</body>
+</html>

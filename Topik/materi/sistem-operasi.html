@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Materi Sistem Operasi - RingkasanKu</title>
+  <style>
+    /* Reset dan style dasar */
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #121212;
+      color: #e0e0e0;
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+    a {
+      color: #4a90e2;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    nav {
+      background-color: #1f1f1f;
+      padding: 1rem;
+      text-align: center;
+      font-weight: 600;
+      font-size: 1.1rem;
+      border-bottom: 1px solid #333;
+    }
+    nav a {
+      color: #4a90e2;
+    }
+    .container {
+      max-width: 900px;
+      margin: 2rem auto 3rem auto;
+      padding: 1rem 1.5rem;
+      background-color: #1e1e1e;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgb(74 144 226 / 0.3);
+    }
+    h1 {
+      color: #4a90e2;
+      margin-bottom: 1rem;
+      text-align: center;
+      font-weight: 700;
+      font-size: 2.5rem;
+    }
+    h2 {
+      color: #74b9ff;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+      border-bottom: 2px solid #4a90e2;
+      padding-bottom: 0.3rem;
+    }
+    h3 {
+      color: #82ccdd;
+      margin-top: 1.5rem;
+      margin-bottom: 0.7rem;
+      font-weight: 600;
+    }
+    p {
+      margin-bottom: 1.2rem;
+      font-size: 1.1rem;
+    }
+    ul, ol {
+      margin-left: 1.4rem;
+      margin-bottom: 1.2rem;
+    }
+    ul li, ol li {
+      margin-bottom: 0.6rem;
+      font-size: 1.05rem;
+    }
+    .btn {
+      display: inline-block;
+      background-color: #4a90e2;
+      color: #fff;
+      padding: 0.7rem 1.4rem;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+      border: none;
+      transition: background-color 0.3s ease;
+      margin-top: 1rem;
+      user-select: none;
+    }
+    .btn:hover {
+      background-color: #2c6cb0;
+    }
+    #pelajari-lebih-lanjut {
+      display: none;
+      margin-top: 1.5rem;
+      padding: 1.4rem 1.5rem;
+      background-color: #2c3e50;
+      border-radius: 10px;
+      border: 1px solid #4a90e2;
+      color: #c5d6f2;
+      font-size: 1.05rem;
+      line-height: 1.8;
+    }
+    .daftar-isi {
+      background: #182c4f;
+      padding: 1rem 1.2rem;
+      margin-bottom: 2rem;
+      border-radius: 8px;
+      font-size: 1rem;
+      line-height: 1.5;
+      color: #a3b4cc;
+      user-select: none;
+    }
+    .daftar-isi strong {
+      color: #74b9ff;
+    }
+    .daftar-isi a {
+      color: #82ccdd;
+    }
+    .daftar-isi a:hover {
+      text-decoration: underline;
+    }
+    blockquote {
+      margin: 1.5rem 0;
+      padding-left: 1rem;
+      border-left: 4px solid #4a90e2;
+      color: #a0b8d6;
+      font-style: italic;
+    }
+    @media (max-width: 600px) {
+      .container {
+        margin: 1rem;
+        padding: 1rem;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="../topik.html">&#8592; Kembali ke Daftar Topik</a>
+</nav>
+
+<div class="container">
+  <h1>Sistem Operasi</h1>
+
+  <div class="daftar-isi">
+    <strong>Daftar Isi:</strong>
+    <ol>
+      <li><a href="#definisi">Definisi Sistem Operasi</a></li>
+      <li><a href="#fungsi">Fungsi Sistem Operasi</a></li>
+      <li><a href="#jenis">Jenis-jenis Sistem Operasi</a></li>
+      <li><a href="#komponen">Komponen Sistem Operasi</a></li>
+      <li><a href="#pelajari-lebih-lanjut">Pelajari Lebih Lanjut</a></li>
+    </ol>
+  </div>
+
+  <section id="definisi">
+    <h2>Definisi Sistem Operasi</h2>
+    <p>
+      Sistem operasi adalah perangkat lunak utama yang mengatur dan mengelola sumber daya komputer serta menyediakan layanan untuk program aplikasi dan pengguna.
+    </p>
+    <p>
+      Sistem operasi berfungsi sebagai perantara antara perangkat keras komputer dengan pengguna dan aplikasi.
+    </p>
+    <blockquote>
+      "Sistem operasi adalah jiwa dari komputer yang mengatur segala aktivitas di dalamnya."
+    </blockquote>
+  </section>
+
+  <section id="fungsi">
+    <h2>Fungsi Sistem Operasi</h2>
+    <ul>
+      <li><strong>Manajemen Proses:</strong> Mengelola eksekusi program dan proses secara efisien.</li>
+      <li><strong>Manajemen Memori:</strong> Mengatur penggunaan memori utama untuk proses yang sedang berjalan.</li>
+      <li><strong>Manajemen File:</strong> Mengatur penyimpanan dan pengambilan data dalam sistem file.</li>
+      <li><strong>Manajemen Perangkat Keras:</strong> Mengontrol dan mengatur komunikasi dengan perangkat keras seperti printer, keyboard, dan disk.</li>
+      <li><strong>Keamanan dan Proteksi:</strong> Melindungi sistem dari akses tidak sah dan menjaga integritas data.</li>
+      <li><strong>Antarmuka Pengguna:</strong> Menyediakan cara bagi pengguna untuk berinteraksi dengan komputer, baik melalui command line atau GUI.</li>
+    </ul>
+  </section>
+
+  <section id="jenis">
+    <h2>Jenis-jenis Sistem Operasi</h2>
+    <p>
+      Sistem operasi dibedakan berdasarkan cara penggunaannya dan teknologi yang digunakan, antara lain:
+    </p>
+    <ul>
+      <li><strong>Sistem Operasi Batch:</strong> Menjalankan pekerjaan secara berkelompok tanpa interaksi langsung pengguna.</li>
+      <li><strong>Sistem Operasi Time-Sharing:</strong> Memungkinkan beberapa pengguna menggunakan sistem secara bersamaan dengan pembagian waktu.</li>
+      <li><strong>Sistem Operasi Real-Time:</strong> Memberikan respons seketika terhadap input untuk aplikasi kritis seperti kontrol mesin.</li>
+      <li><strong>Sistem Operasi Terdistribusi:</strong> Mengelola sumber daya komputer yang tersebar dalam jaringan.</li>
+      <li><strong>Sistem Operasi Mobile:</strong> Dirancang khusus untuk perangkat mobile seperti Android dan iOS.</li>
+      <li><strong>Sistem Operasi Desktop:</strong> Contoh populer seperti Windows, macOS, dan Linux.</li>
+    </ul>
+  </section>
+
+  <section id="komponen">
+    <h2>Komponen Sistem Operasi</h2>
+    <h3>1. Kernel</h3>
+    <p>
+      Kernel adalah inti dari sistem operasi yang mengatur manajemen sumber daya dan komunikasi antara perangkat keras dan perangkat lunak.
+    </p>
+    <h3>2. Shell</h3>
+    <p>
+      Shell adalah antarmuka yang memungkinkan pengguna berinteraksi dengan sistem operasi, baik berupa command line (CLI) atau graphical user interface (GUI).
+    </p>
+    <h3>3. File System</h3>
+    <p>
+      Sistem file mengatur cara penyimpanan dan pengorganisasian data pada media penyimpanan.
+    </p>
+    <h3>4. Device Driver</h3>
+    <p>
+      Driver perangkat keras memungkinkan sistem operasi mengontrol dan berkomunikasi dengan perangkat fisik.
+    </p>
+    <h3>5. Utility Programs</h3>
+    <p>
+      Program utilitas menyediakan fungsi tambahan seperti backup, antivirus, dan manajemen disk.
+    </p>
+  </section>
+
+  <button id="toggle-btn" class="btn" aria-expanded="false" aria-controls="pelajari-lebih-lanjut">
+    Pelajari Lebih Lanjut
+  </button>
+
+  <section id="pelajari-lebih-lanjut" tabindex="-1" aria-hidden="true">
+
+    <section id="jenis">
+ <h2>Contoh Sistem Operasi Populer</h2>
+  <p>
+    Berikut ini beberapa contoh sistem operasi yang banyak digunakan di berbagai perangkat:
+  </p>
+  <ul>
+    <li><strong>Windows:</strong> Sistem operasi buatan Microsoft yang sangat populer untuk komputer pribadi dan kantor dengan antarmuka grafis yang mudah digunakan.</li>
+    <li><strong>Linux:</strong> Sistem operasi open-source yang dikenal fleksibel dan aman, digunakan di server, desktop, dan perangkat embedded.</li>
+    <li><strong>macOS:</strong> Sistem operasi dari Apple yang khusus digunakan pada komputer Mac, terkenal dengan desain elegan dan kestabilan tinggi.</li>
+    <li><strong>Android:</strong> Sistem operasi berbasis Linux yang paling banyak digunakan pada perangkat smartphone dan tablet.</li>
+    <li><strong>iOS:</strong> Sistem operasi mobile dari Apple untuk iPhone dan iPad, terkenal dengan keamanan dan ekosistem aplikasi yang ketat.</li>
+  </ul>
+</section>
+
+ <section class="os-types">
+  <h2>Keunggulan Sistem Operasi</h2>
+
+  <article class="os-card">
+    <h3> Windows</h3>
+    <p>
+      Windows adalah sistem operasi buatan Microsoft yang paling banyak digunakan di dunia, terutama pada komputer pribadi (PC). Antarmukanya yang user-friendly membuatnya mudah dioperasikan oleh pengguna dari berbagai kalangan. Versi-versi populernya termasuk Windows XP, Windows 7, Windows 10, dan Windows 11.
+    </p>
+    <ul>
+      <li><strong>Keunggulan:</strong> Kompatibel dengan banyak software dan game, tampilan grafis menarik, banyak dukungan teknis dan komunitas.</li>
+      <li><strong>Kekurangan:</strong> Sistem berbayar (berlisensi), rentan terhadap malware jika tidak dilindungi dengan antivirus.</li>
+    </ul>
+  </article>
+
+  <article class="os-card">
+    <h3>🐧 Linux</h3>
+    <p>
+      Linux adalah sistem operasi open-source yang berbasis Unix. Banyak digunakan oleh developer, administrator server, dan juga pengguna yang menginginkan sistem gratis dan fleksibel. Karena bersifat terbuka, Linux memiliki banyak "distro" (distribusi) yang bisa dipilih sesuai kebutuhan.
+    </p>
+    <p><strong>Beberapa distro Linux populer:</strong></p>
+    <ul>
+      <li><strong>Ubuntu:</strong> Cocok untuk pemula, dengan antarmuka modern dan kemudahan penggunaan.</li>
+      <li><strong>Debian:</strong> Stabil dan banyak digunakan untuk server.</li>
+      <li><strong>Fedora:</strong> Cocok untuk pengguna yang suka fitur terbaru.</li>
+      <li><strong>Arch Linux:</strong> Untuk pengguna tingkat lanjut yang ingin sistem yang dapat dikustomisasi dari bawah.</li>
+      <li><strong>Kali Linux:</strong> Didesain untuk keperluan keamanan siber dan penetration testing.</li>
+    </ul>
+    <ul>
+      <li><strong>Keunggulan:</strong> Gratis dan open-source, ringan, aman dari virus, sangat fleksibel dan bisa dimodifikasi sesuai kebutuhan.</li>
+      <li><strong>Kekurangan:</strong> Tidak semua software populer mendukung Linux, butuh waktu belajar lebih untuk pemula.</li>
+    </ul>
+  </article>
+
+  <article class="os-card">
+    <h3>📱 Android</h3>
+    <p>
+      Android adalah sistem operasi berbasis Linux yang dirancang untuk perangkat mobile seperti smartphone dan tablet. Dikembangkan oleh Google, Android mendominasi pasar sistem operasi mobile global.
+    </p>
+    <ul>
+      <li><strong>Keunggulan:</strong> Open-source, banyak pilihan aplikasi, fleksibel, dan tersedia di banyak jenis perangkat.</li>
+      <li><strong>Kekurangan:</strong> Beberapa perangkat lambat mendapatkan update, adanya potensi fragmentasi antar versi.</li>
+    </ul>
+  </article>
+</section>
+
+<h3>Contoh Sistem Operasi Populer dan Karakteristiknya</h3>
+<ul>
+  <li>
+    <strong>Windows:</strong><br>
+    Dikembangkan oleh Microsoft, Windows adalah sistem operasi dengan antarmuka grafis yang user-friendly dan sangat kompatibel dengan banyak perangkat lunak dan hardware. Cocok untuk pengguna rumahan, kantor, dan gaming.
+  </li>
+  <li>
+    <strong>Linux:</strong><br>
+    Merupakan sistem operasi open-source yang sangat fleksibel. Linux digunakan secara luas pada server web, superkomputer, dan juga desktop bagi pengguna yang ingin sistem yang lebih dapat dikustomisasi dan aman.
+  </li>
+  <li>
+    <strong>macOS:</strong><br>
+    Sistem operasi eksklusif untuk perangkat Apple Mac, macOS terkenal dengan kestabilan, keamanan, dan desain antarmuka yang intuitif. Cocok untuk pekerjaan kreatif seperti desain grafis dan video editing.
+  </li>
+  <li>
+    <strong>Android:</strong><br>
+    Sistem operasi mobile berbasis Linux yang dikembangkan oleh Google, Android mendominasi pasar smartphone dan tablet. Mendukung banyak aplikasi dan kustomisasi oleh pengguna dan produsen perangkat.
+  </li>
+  <li>
+    <strong>iOS:</strong><br>
+    Sistem operasi mobile buatan Apple yang digunakan pada iPhone dan iPad. iOS dikenal dengan sistem keamanan yang ketat dan ekosistem aplikasi yang terkontrol dengan baik.
+  </li>
+</ul>
+
+    <h2>Pelajari Lebih Lanjut tentang Sistem Operasi</h2>
+    <p>
+      Sistem operasi merupakan salah satu komponen paling penting dalam dunia teknologi komputer modern. Dengan berkembangnya teknologi hardware dan kebutuhan aplikasi yang semakin kompleks, sistem operasi juga mengalami evolusi yang signifikan. Berikut ini adalah penjelasan teknis mendalam yang membahas konsep, arsitektur, hingga mekanisme kerja sistem operasi secara rinci.
+    </p>
+    <h3>Arsitektur Sistem Operasi</h3>
+    <p>
+      Arsitektur sistem operasi biasanya terdiri dari beberapa lapisan yang terorganisir secara hierarki:
+    </p>
+    <ul>
+      <li><strong>Lapisan Kernel:</strong> Mengelola komunikasi langsung dengan perangkat keras dan sumber daya sistem.</li>
+      <li><strong>Lapisan Sistem Call Interface:</strong> Menyediakan API untuk program aplikasi agar dapat memanfaatkan layanan sistem operasi.</li>
+      <li><strong>Lapisan User Space:</strong> Tempat program aplikasi dan utilitas berjalan secara terpisah dari kernel untuk keamanan dan stabilitas.</li>
+    </ul>
+    <h3>Manajemen Proses dan Thread</h3>
+    <p>
+      Sistem operasi mengelola proses yang merupakan program yang sedang berjalan. Proses bisa memiliki satu atau lebih thread yang memungkinkan eksekusi beberapa bagian program secara paralel. Sistem operasi bertanggung jawab dalam scheduling, sinkronisasi, dan komunikasi antar proses untuk memastikan kinerja yang optimal.
+    </p>
+    <h3>Manajemen Memori</h3>
+    <p>
+      Memori utama dibagi menjadi beberapa bagian yang dialokasikan ke proses yang aktif. Sistem operasi menggunakan teknik seperti paging dan segmentation untuk mengatur dan melindungi memori antar proses, mencegah konflik dan kebocoran data.
+    </p>
+    <h3>File System dan Penyimpanan</h3>
+    <p>
+      Sistem file menyediakan struktur direktori, metadata, dan mekanisme akses data yang terorganisir. Berbagai jenis sistem file seperti FAT32, NTFS, ext4, dan lainnya memiliki karakteristik khusus yang disesuaikan dengan kebutuhan dan performa.
+    </p>
+    <h3>Keamanan dan Proteksi</h3>
+    <p>
+      Sistem operasi menyediakan mekanisme autentikasi pengguna, kontrol akses file, enkripsi data, dan firewall untuk menjaga sistem dari ancaman dan menjaga integritas data.
+    </p>
+    <h3>Virtualisasi dan Sistem Operasi Modern</h3>
+    <p>
+      Teknologi virtualisasi memungkinkan menjalankan beberapa sistem operasi sekaligus di satu perangkat keras fisik melalui hypervisor. Ini sangat penting dalam lingkungan server dan cloud computing untuk efisiensi sumber daya.
+    </p>
+  </section>
+</div>
+
+<script>
+  const toggleBtn = document.getElementById('toggle-btn');
+  const pelajariSection = document.getElementById('pelajari-lebih-lanjut');
+
+  toggleBtn.addEventListener('click', () => {
+    const isHidden = pelajariSection.style.display === 'none' || pelajariSection.style.display === '';
+    if (isHidden) {
+      pelajariSection.style.display = 'block';
+      toggleBtn.setAttribute('aria-expanded', 'true');
+      pelajariSection.setAttribute('aria-hidden', 'false');
+      pelajariSection.focus();
+      toggleBtn.textContent = 'Tutup Pelajari Lebih Lanjut';
+    } else
+{
+pelajariSection.style.display = 'none';
+toggleBtn.setAttribute('aria-expanded', 'false');
+pelajariSection.setAttribute('aria-hidden', 'true');
+toggleBtn.textContent = 'Pelajari Lebih Lanjut';
+}
+});
+</script>
+
+</body> </html> ```

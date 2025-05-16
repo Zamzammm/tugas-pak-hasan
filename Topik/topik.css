@@ -1,0 +1,145 @@
+/* Reset & font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0f0f1a;
+  color: #ddd;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem 1rem;
+}
+
+/* Navbar */
+.navbar {
+  background: #121224;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 1rem;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #5cf;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #aaa;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #5cf;
+}
+
+/* Header */
+.topik-header {
+  text-align: center;
+  margin: 3rem 0 4rem 0;
+}
+
+.topik-header h1 {
+  font-size: 2.8rem;
+  color: #5cf;
+  margin-bottom: 0.5rem;
+}
+
+.topik-header p {
+  font-size: 1.2rem;
+  color: #bbb;
+}
+
+/* Section Topik */
+.topik-section {
+  background-color: #1c1c3a;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-bottom: 3rem;
+  box-shadow: 0 0 10px #222244;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.topik-section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.topik-section h2 {
+  flex-basis: 100%;
+  color: #7af;
+  margin-bottom: 1rem;
+}
+
+.topik-section p {
+  flex: 1 1 400px;
+  font-size: 1.1rem;
+  color: #ccc;
+}
+
+.topik-section img {
+  flex: 1 1 300px;
+  max-width: 300px;
+  border-radius: 0.7rem;
+  box-shadow: 0 0 15px #5cf;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #121224;
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: 4rem;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #007BFF; /* biru */
+  color: white;
+  padding: 10px 20px;
+  margin-top: 12px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3; /* lebih gelap saat hover */
+}

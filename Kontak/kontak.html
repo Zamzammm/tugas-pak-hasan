@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kontak - RingkasanKu</title>
+  <link rel="stylesheet" href="kontak.css" />
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-container container">
+    <div class="logo">RingkasanKu</div>
+    <ul class="nav-links">
+      <li><a href="../Main/main.html#home">Home</a></li>
+      <li><a href="../Tentang/tentang.html">Tentang</a></li>
+      <li><a href="../Topik/topik.html">Topik</a></li>
+      <li><a href="#kontak" class="active">Kontak</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="container kontak-container">
+  <h1>Kontak Kami</h1>
+  <p>Butuh bantuan atau punya pertanyaan? Hubungi kami melalui form di bawah ini!</p>
+  
+  <form class="kontak-form" id="kontakForm" action="#" method="POST" novalidate>
+    <label for="nama">Nama Lengkap</label>
+    <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required />
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="Masukkan email valid" required />
+
+    <label for="pesan">Pesan</label>
+    <textarea id="pesan" name="pesan" rows="5" placeholder="Tulis pesanmu di sini..." required></textarea>
+
+    <button type="submit" class="btn">Kirim Pesan</button>
+  </form>
+
+  <section class="info-kontak">
+    <h2>Informasi Kontak</h2>
+    <p>Email: support@ringkasanKu.id</p>
+    <p>Telepon: +62 812 3456 7890</p>
+    <p>Alamat: Jl. Contoh No. 123, Jakarta, Indonesia</p>
+  </section>
+</main>
+
+<script src="kontak.js"></script>
+</body>
+</html>
